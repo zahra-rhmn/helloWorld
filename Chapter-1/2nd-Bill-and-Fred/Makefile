@@ -15,4 +15,5 @@ program: program.o bill.o fred.o lib.h
 clean:
 	rm -f *.o
 lib:
-	ar crv libfoo.a bill.o fred.o
+	ar crv libfoo.a bill.o fred.
+	ranlib libfoo.a
