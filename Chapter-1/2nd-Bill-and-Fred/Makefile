@@ -10,7 +10,9 @@ program.o: program.c
 	gcc -c program.c -o program.o
 
 program: program.o bill.o fred.o lib.h
-	gcc -o program program.o bill.o fred.o
+	gcc -o program program.o libfoo.a
 
 clean:
 	rm -f *.o
+lib:
+	ar crv libfoo.a bill.o fred.o

@@ -5,3 +5,5 @@ all: 1st.o
 
 clean:
 	rm -f *.o
+run:
+	./1st.o

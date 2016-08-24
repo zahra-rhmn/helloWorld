@@ -3,5 +3,6 @@
 
 int main(){
 	printf("Hello LinuxWorld!\n");
+	printf(":D\n");
 	return 0;
 }
